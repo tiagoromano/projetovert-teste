@@ -1,7 +1,7 @@
-<h3>User</h3>
+<div class="component-holder ng-binding ng-scope" data-component="crn-button" id="crn-button-104967"><button class="btn btn-default" type="submit" ng-click="">Button</button></div><h3>User</h3>
 
 <div data-component="crn-datasource" id="crn-datasource-763276"> 
-   <datasource  name="User" entity="/api/security/User" keys="id" rows-per-page="100" delete-message="Deseja remover?" class=""></datasource> 
+   <datasource name="User" entity="/api/security/User" keys="id" rows-per-page="100" delete-message="Deseja remover?" class=""></datasource> 
 </div> 
 <div data-component="crn-button" id="crn-button-564202"> 
   <button class="btn btn-primary" type="submit" onclick="" ng-click="User.startInserting()" ng-hide="User.inserting || User.editing"><i class="fa fa-user"></i> <span class="">{{"template.crud.new" | translate}}</span></button> 
@@ -82,7 +82,7 @@
           
             <label for="textinput-email" class="">email</label> 
         
-        <input type="text" ng-model="User.active.email" class="form-control" id="textinput-email" placeholder="email"  > 
+        <input type="text" ng-model="User.active.email" class="form-control" id="textinput-email" placeholder="email"> 
 
           </div> 
         </div> 
@@ -92,7 +92,7 @@
           
             <label for="textinput-name" class="">name</label> 
         
-        <input type="text" ng-model="User.active.name" class="form-control" id="textinput-name" placeholder="name"  required="required"> 
+        <input type="text" ng-model="User.active.name" class="form-control" id="textinput-name" placeholder="name" required="required"> 
 
           </div> 
         </div> 
@@ -102,7 +102,7 @@
           
             <label for="textinput-login" class="">login</label> 
         
-        <input type="text" ng-model="User.active.login" class="form-control" id="textinput-login" placeholder="login"  required="required"> 
+        <input type="text" ng-model="User.active.login" class="form-control" id="textinput-login" placeholder="login" required="required"> 
 
           </div> 
         </div> 
@@ -112,7 +112,7 @@
           
             <label for="textinput-picture" class="">picture</label> 
         
-        <input type="text" ng-model="User.active.picture" class="form-control" id="textinput-picture" placeholder="picture"  > 
+        <input type="text" ng-model="User.active.picture" class="form-control" id="textinput-picture" placeholder="picture"> 
 
           </div> 
         </div> 
@@ -122,7 +122,7 @@
           
             <label for="textinput-password" class="">password</label> 
         
-        <input type="password" ng-model="User.active.password" class="form-control" id="textinput-password" placeholder="password"  required="required"> 
+        <input type="password" ng-model="User.active.password" class="form-control" id="textinput-password" placeholder="password" required="required"> 
 
           </div> 
         </div> 
@@ -132,7 +132,7 @@
           
             <label for="textinput-theme" class="">theme</label> 
         
-        <input type="text" ng-model="User.active.theme" class="form-control" id="textinput-theme" placeholder="theme"  > 
+        <input type="text" ng-model="User.active.theme" class="form-control" id="textinput-theme" placeholder="theme"> 
 
           </div> 
         </div> 
@@ -148,7 +148,7 @@
         <div class="form-group" ng-show="datasource.editing">
           <label for="select-ui">Role</label> 
           <div id="select-ui" data-component="crn-tags"> 
-            <ui-select multiple crn-datasource="AllRole" ng-model="Role.data" class="crn-select" style="min-width: 200px" theme="bootstrap" enabled="{{User.editing}}"> 
+            <ui-select multiple="" crn-datasource="AllRole" ng-model="Role.data" class="crn-select" style="min-width: 200px" theme="bootstrap" enabled="{{User.editing}}"> 
               <ui-select-match placeholder="Role...">
                  {{$item.name }} 
               </ui-select-match> 
